@@ -103,12 +103,20 @@ Measured on valoper, 2026-10-03, against beats-bitwrap-io `3ebaf60`:
 
 | check | result |
 |---|---|
-| mulberry32, strHash (incl. astral-plane UTF-16), deterministicRand, noiseSeed + xorshift32 | bit-exact |
-| traces techno/42/standard, jazz/7, edm/1234/extended, dnb/99/standard, ambient/3, conflict net — 1200 ticks each | exact, byte-identical JSONL |
-| P-invariants, every tick, every net, all traces | 0 breaches (exact rational arithmetic) |
-| isolated-ring spectrum vs predicted `c_k = P̂(k)·DFT(w)` | max rel err 4.45e-10 |
-| audio techno/42, jazz/7, edm/1234/standard, 10 s each | 480000/480000 samples bit-identical |
-| CLI WAV vs the JS `scripts/wave-render.mjs`, techno/42/standard, 12 s | same sha256 |
+| mulberry32 (8 seeds × 64, incl. negative / > 2³¹ / fractional seeds), strHash (incl. astral-plane UTF-16), deterministicRand, noiseSeed + xorshift32 | bit-exact |
+| trace techno/42/standard | exact, byte-identical JSONL, 1200 ticks, 60 nets, stop-transport at tick 897 |
+| trace jazz/7/loop | exact, byte-identical, 1200 ticks, 10 nets |
+| trace edm/1234/extended | exact, byte-identical, 1200 ticks, 101 nets, 107 control fires |
+| trace dnb/99/standard | exact, byte-identical, 1200 ticks, 68 nets, stop at tick 961 |
+| trace ambient/3/loop | exact, byte-identical, 1200 ticks, 10 nets |
+| trace conflict net (2 transitions, 1 place) | exact; seeded resolution took left 305 / right 295 |
+| P-invariants, every tick, every net, all 6 traces | 0 breaches (exact rational). Every music ring has the all-ones invariant (40/40, 10/10, 73/73, 46/46, 10/10, 1/1). The `struct-*` control nets have no invariant (7, 9, 7), matching the JS README |
+| FFT of an isolated ring (techno/42 hi-hat, n=8, DC carrier, 48 bins) vs predicted `c_k = P̂(k)·DFT(w)` | max rel err 4.45e-10 |
+| closed-form `envelope()` vs rendered gate, one full period | max abs err 2.98e-8 (float32 output) |
+| audio techno/42/loop, 10 s, 10 lanes | 480000/480000 samples bit-identical, max abs err 0 |
+| audio jazz/7/loop, 10 s, 10 lanes | 480000/480000 bit-identical, max abs err 0 |
+| audio edm/1234/standard, 10 s, 53 lanes | 480000/480000 bit-identical, max abs err 0 |
+| CLI WAV vs the JS `scripts/wave-render.mjs`, techno/42/standard, 12 s | same sha256 (`92bc55a1…`) |
 
 Pure-Python rendering runs at roughly 2–4 s of wall time per 10 s of audio.
 
