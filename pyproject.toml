@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "beats-py"
+version = "0.1.0"
+description = "Offline Python port of the beats (beats.bitwrap.io) Petri-net wave engine: marking traces and WAV rendering"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "Matt York (stackdump)" }]
+keywords = ["petri-net", "audio", "synthesis", "sequencer", "deterministic"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Sound/Audio :: Sound Synthesis",
+]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7", "numpy"]
+
+[project.scripts]
+beats-py = "wave_py.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/stackdump/beats-py"
+"JS engine" = "https://github.com/stackdump/beats-bitwrap-io"
+
+[tool.setuptools]
+packages = ["wave_py"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
