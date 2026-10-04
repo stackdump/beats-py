@@ -20,9 +20,13 @@ dependencies = []
 
 [project.optional-dependencies]
 test = ["pytest>=7", "numpy"]
+analysis = ["numpy", "scipy", "pyloudnorm"]
+mcp = ["mcp"]
+viz = ["numpy", "scipy", "matplotlib"]
 
 [project.scripts]
 beats-py = "wave_py.__main__:main"
+beats-py-mcp = "wave_py.mcp_server:main"
 
 [project.urls]
 Homepage = "https://github.com/stackdump/beats-py"
