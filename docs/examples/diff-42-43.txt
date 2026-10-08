@@ -1,0 +1,35 @@
+# beats-ir diff  techno:42:standard → techno:43:standard
+  name: techno · Rusted Spine → techno · Brouwer Signal
+  bass: instrument reese→acid
+  kick: instrument drums-v8→drums
+  melody: instrument sync-lead→supersaw
+§2 buildup  hits/bar 28.2→28.8
+  melody     6/12 bars changed; density 6.83→7.83; odd16 0.366→0.255; offbeat8 0.073→0.255; notes C4 D4 → C4 D4 E4 F4
+    bar 1   ...x|x...|x..x|x... C4 C4 C4 C4 C4
+    →       ..x.|x...|x..x|xx.x E4 E4 E4 C4 C4 C4 C4
+    bar 2   x...|x.xx|x..x|xx.. D4 D4 C4 C4 D4 C4 D4 D4
+    →       x.x.|xx..|x.x.|x.x. D4 D4 D4 F4 F4 F4 F4 D4
+§3 drop  hits/bar 32.2→32.5
+  melody     12/12 bars changed; density 7.25→7.5; odd16 0.345→0.3; offbeat8 0.103→0.167; notes C4 D4 E4 F4 A4 B4 → C4 D4 E4 F4 G4 A4 B4
+    bar 1   x..x|x...|x..x|x... C4 C4 C4 C4 C4 C4
+    →       x.x.|x...|x..x|xx.x C4 E4 E4 E4 C4 C4 C4 C4
+    bar 2   x...|x.xx|x..x|xx.. D4 D4 C4 C4 D4 C4 D4 D4
+    →       x.x.|xx..|x.x.|x.x. D4 D4 D4 F4 F4 F4 F4 D4
+§4 verse  hits/bar 27.4→27.9
+  melody     6/12 bars changed; density 7→8; odd16 0.357→0.25; offbeat8 0.071→0.25; notes C4 D4 → C4 D4 E4 F4
+    bar 1   x..x|x...|x..x|x... C4 C4 C4 C4 C4 C4
+    →       x.x.|x...|x..x|xx.x C4 E4 E4 E4 C4 C4 C4 C4
+    bar 2   x...|x.xx|x..x|xx.. D4 D4 C4 C4 D4 C4 D4 D4
+    →       x.x.|xx..|x.x.|x.x. D4 D4 D4 F4 F4 F4 F4 D4
+§5 drop  hits/bar 32.2→32.5
+  melody     12/12 bars changed; density 7.25→7.5; odd16 0.345→0.3; offbeat8 0.103→0.167; notes C4 D4 E4 F4 A4 B4 → C4 D4 E4 F4 G4 A4 B4
+    bar 1   x..x|x...|x..x|x... C4 C4 C4 C4 C4 C4
+    →       x.x.|x...|x..x|xx.x C4 E4 E4 E4 C4 C4 C4 C4
+    bar 2   x...|x.xx|x..x|xx.. D4 D4 C4 C4 D4 C4 D4 D4
+    →       x.x.|xx..|x.x.|x.x. D4 D4 D4 F4 F4 F4 F4 D4
+§6 outro  hits/bar 22.0→22.5
+  melody     2/4 bars changed; density 7→8; odd16 0.357→0.25; offbeat8 0.071→0.25; notes C4 D4 → C4 D4 E4 F4
+    bar 1   x..x|x...|x..x|x... C4 C4 C4 C4 C4 C4
+    →       x.x.|x...|x..x|xx.x C4 E4 E4 E4 C4 C4 C4 C4
+    bar 2   x...|x.xx|x..x|xx.. D4 D4 C4 C4 D4 C4 D4 D4
+    →       x.x.|xx..|x.x.|x.x. D4 D4 D4 F4 F4 F4 F4 D4

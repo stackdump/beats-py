@@ -1,0 +1,110 @@
+# beats-ir/1 genre=techno seed=3976429772 structure=loop | 128 BPM C3 Major | 64 bars 2:00 | 16 steps/bar
+# grid: 1 char = 1/16, | = beat; X accent x hit g ghost - sustain . rest; letters = that row's distinct 1-bar patterns; ×N = repeats
+
+PARTS
+  kick       kick     drums-v8     ch10  active 64/64 bars
+  snare      snare    drums-v8     ch11  active 64/64 bars
+  hihat      hat      drums-v8     ch12  active 64/64 bars
+  bass       bass     acid         ch6   active 64/64 bars range C3-B3
+  melody     melody   trance-lead  ch4   active 64/64 bars range C4-B4
+  harmony    harmony  dark-pad     ch7   active 64/64 bars range C3-B3
+  never sounds: hit1 hit2 hit3 hit4
+
+PATTERNS
+  kick       A  X...|X...|X...|X...   4
+  snare      A  ....|x...|....|x...   2
+  hihat      A  x.xg|.gxg|x.xg|.gxg  12
+  bass       A  x-..|x-..|x-..|x-..   4 C3 C3 C3 C3
+  bass       B  x-..|x-..|x-..|x-..   4 B3 B3 B3 B3
+  melody     A  x..x|x.x.|xx..|x...   7 C4 D4 E4 E4 E4 G4 G4
+  melody     B  x...|x...|x...|xx.x   6 F4 F4 F4 F4 F4 D4
+  melody     C  x...|x...|x...|xxx.   6 G4 G4 G4 G4 B4 B4
+  melody     D  x..x|x...|x.x.|x...   6 B4 B4 B4 B4 B4 C4
+  harmony    A  xxx-|----|----|----   3 C3 E3 G3
+  harmony    B  xxx-|----|----|----   3 B3 D3 F3
+
+SECTIONS
+§1 loop  bars 1-64 (64)  31.2 hits/bar
+  in: kick snare hihat bass melody harmony
+  kick       A×64                   4/bar          on 100% off 0% 16th 0%
+  snare      A×64                   2/bar          on 100% off 0% 16th 0%
+  hihat      A×64                   12/bar         on 16% off 33% 16th 50%
+  bass       (A B)×32               4/bar          on 100% off 0% 16th 0%  notes C3 B3
+  melody     (A B C D)×16           6.25/bar       on 64% off 12% 16th 24%  notes C4 D4 E4 F4 G4 B4
+  harmony    (A B)×32               3/bar          on 33% off 33% 16th 33%  notes C3 D3 E3 F3 G3 B3
+
+TOTALS
+  kick       4/bar  16th 0%  off 0%  1 patterns
+  snare      2/bar  16th 0%  off 0%  1 patterns
+  hihat      12/bar  16th 50%  off 33%  1 patterns
+  bass       4/bar  16th 0%  off 0%  2 patterns  2 pitches span 11st
+  melody     6.25/bar  16th 24%  off 12%  4 patterns  6 pitches span 11st
+  harmony    3/bar  16th 33%  off 33%  2 patterns  6 pitches span 11st
+  kick/bass  256/256 bass onsets land on a kick (100%)
+
+AUDIO  z4EBG9jBr1M4jL6FTrV5TathwNxYUUZH8RTbfRfZuzex2ytV2zp.webm  120.96s  -15.5 LUFS  offset +0.325s  tempo 128 (×1.000)  align peak/2nd 1.001
+  score→onset match: kick 94% -4ms±2; hihat 69% +0ms±2 swing +0ms; snare 96% +2ms±1
+  low-end pump (kick peak over bass gap) median 8.1 dB
+  E/bands: 0-9, 4 dB a step below each band's loudest bar; bands = sub low lomid himid high;
+  onset grids = detected onsets quantised to 16ths (kick band 35-150 Hz, high 6-16 kHz);
+  match = score hits found within ±0.4 step, median ms (+ = audio late)
+  bars     sec  E bands  kick-band onsets     high-band onsets     match  pump
+  1        §1   8 88888  .x.x|x.x.|x.x.|x.x.  xxxx|.xx.|x.xx|xxx.  kick 3/4+3 hihat 10/12+1 snare 2/2+3  7.8dB
+  2        §1   8 88788  x.x.|x.x.|x.x.|x.x.  x.xx|xxx.|x.xx|xxx.  kick 4/4-5 hihat 10/12+1 snare 2/2+3  7.9dB
+  3        §1   8 88788  xxx.|x.x.|x.x.|x.x.  x.xx|x.x.|x.xx|xxx.  kick 4/4-5 hihat 9/12+1 snare 2/2+3  6.8dB
+  4        §1   8 88788  x.x.|x.x.|x.x.|x.x.  x.xx|xxx.|x.xx|xxx.  kick 4/4-5 hihat 10/12+0 snare 2/2+3  8.0dB
+  5        §1   8 88898  xxx.|x.x.|x.x.|x.x.  x.xx|xxx.|x.xx|x.x.  kick 4/4-4 hihat 9/12+1 snare 2/2+3  7.8dB
+  6        §1   9 99970  x.x.|x.x.|x.x.|xxx.  ..x.|x...|x...|....  kick 4/4-4 hihat 2/12+3 snare 2/2+0  7.3dB
+  7        §1   8 87778  x.x.|x.x.|x.x.|x.x.  x.x.|x.x.|x.xx|x.x.  kick 4/4-6 hihat 7/12+0 snare 2/2+0  5.9dB
+  8        §1   8 88788  x.x.|x.x.|x.x.|x.x.  x.xx|xxx.|x.xx|xxx.  kick 4/4-6 hihat 10/12+1 snare 2/2+3  9.0dB
+  9        §1   8 87778  xxx.|x.x.|x.x.|x.x.  x.xx|xxx.|x.xx|xxx.  kick 4/4-5 hihat 10/12+1 snare 2/2+3  6.3dB
+  10       §1   9 98999  x.x.|x.x.|x.x.|x.x.  x.x.|....|x.x.|x.x.  kick 4/4-6 hihat 5/12-3 snare 1/2-1  5.9dB
+  11       §1   8 88777  x.x.|x.x.|x.x.|x.x.  ..x.|.xx.|x.xx|xxx.  kick 4/4-4 hihat 8/12+1 snare 2/2+3  9.2dB
+  12       §1   8 87788  x.x.|xxx.|x.x.|x.x.  x.xx|xxx.|x.xx|xxx.  kick 4/4-4 hihat 10/12+0 snare 2/2+3  8.0dB
+  13       §1   8 88788  xxx.|x.x.|xxxx|x.xx  x.xx|xxx.|x.xx|xxx.  kick 4/4-3 hihat 10/12+0 snare 2/2+3  5.4dB
+  14       §1   8 88788  x.x.|xxx.|x.x.|x.x.  x.xx|xxx.|x.xx|x.x.  kick 4/4+2 hihat 9/12+0 snare 2/2+3  6.4dB
+  15       §1   8 88778  x.x.|x.x.|x.x.|xxx.  x.xx|xxx.|x.xx|xxx.  kick 4/4-5 hihat 10/12+1 snare 2/2+3  8.3dB
+  16       §1   8 88788  x.x.|x.x.|x.x.|x.x.  x.xx|xxx.|x.xx|xxx.  kick 4/4-6 hihat 10/12+0 snare 2/2+3  6.9dB
+  17       §1   8 88778  x.x.|x.x.|x.x.|x.x.  x.xx|xxx.|x.xx|..x.  kick 4/4-3 hihat 9/12+0 snare 2/2+3  7.8dB
+  18       §1   9 89999  x.x.|x.x.|x.xx|x...  ....|x...|xxxx|x...  kick 4/4-8 hihat 1/12-3 snare 2/2+0  8.7dB
+  19       §1   8 87777  xxx.|x.x.|x.x.|xxx.  x.x.|.xx.|x.xx|xxx.  kick 4/4-3 hihat 9/12+1 snare 2/2+0  8.3dB
+  20       §1   8 88778  x.x.|x.x.|xxx.|x.x.  x.xx|xxx.|x.xx|xxx.  kick 4/4-5 hihat 10/12+1 snare 2/2+3  8.2dB
+  21       §1   8 88777  x...|x.x.|x.x.|x.x.  x.xx|xxxx|xxxx|xxxx  kick 4/4-6 hihat 12/12+1 snare 2/2+3  8.7dB
+  22       §1   8 88788  x.x.|x.x.|x.x.|xxx.  x.xx|xxx.|x.xx|xxx.  kick 4/4-5 hihat 10/12+1 snare 2/2+3  7.4dB
+  23-24×2  §1   8 88788  x.x.|x.x.|x.x.|x.x.  x.xx|xxx.|x.xx|xxx.  kick 4/4-3 hihat 10/12+0 snare 2/2+3  7.6dB
+  25       §1   8 88788  xxx.|x.x.|x.xx|xxxx  x.xx|xxx.|x.xx|x.x.  kick 4/4-3 hihat 9/12+0 snare 2/2+3  6.8dB
+  26       §1   8 88788  x.x.|x.x.|x.x.|x...  x.xx|xxx.|x.x.|x.x.  kick 4/4+5 hihat 8/12+2 snare 2/2+3  5.7dB
+  27       §1   8 88788  ..x.|x.x.|x.x.|x.x.  x.x.|x.x.|x.xx|xxx.  kick 3/4-4 hihat 8/12+1 snare 2/2+0  7.1dB
+  28       §1   8 88788  x.x.|x.x.|x.x.|x.x.  x.xx|xxx.|x.xx|x.x.  kick 4/4-6 hihat 9/12+0 snare 2/2+0  7.7dB
+  29       §1   8 87788  x.x.|xxx.|x.x.|x.x.  x.x.|xxx.|x.xx|xxx.  kick 4/4-6 hihat 9/12+0 snare 2/2+3  7.5dB
+  30       §1   8 88788  x.x.|x.x.|x...|x...  x.x.|xxx.|x.x.|..x.  kick 4/4-6 hihat 7/12+0 snare 2/2+3  8.8dB
+  31       §1   8 88788  x.x.|x.x.|x.x.|xxx.  x.x.|..x.|x.xx|xxx.  kick 4/4-6 hihat 8/12+0 snare 2/2+3  8.8dB
+  32-33×2  §1   8 88788  x.x.|x.x.|x.x.|x.x.  x.xx|xxx.|x.xx|xxx.  kick 4/4-6 hihat 10/12+1 snare 2/2+3  8.1dB
+  34       §1   8 88782  x.x.|x.x.|x.x.|x.x.  x.xx|x...|....|....  kick 4/4-6 hihat 3/12+3 snare 2/2+0  8.0dB
+  35       §1   8 88700  xxx.|x.x.|x.x.|x.x.  ....|....|....|....  kick 4/4-5 hihat 0/12 snare 0/2  7.4dB
+  36       §1   8 89740  x.x.|x.x.|x.x.|x.x.  ....|....|....|....  kick 4/4-3 hihat 0/12 snare 1/2+5  8.7dB
+  37       §1   8 88788  x.x.|x.x.|x.x.|x.x.  x.xx|xxx.|x.xx|xxx.  kick 4/4-3 hihat 10/12+0 snare 2/2+3  8.0dB
+  38       §1   8 88788  xxx.|x.x.|x.x.|xxx.  x.xx|xxx.|x.x.|x.x.  kick 4/4-6 hihat 8/12+1 snare 2/2+0  7.5dB
+  39       §1   8 88788  x.x.|x.x.|x.x.|xxx.  x.x.|x.x.|x.xx|xxx.  kick 4/4-8 hihat 8/12+0 snare 2/2+3  12.4dB
+  40       §1   8 88788  x.x.|x.x.|x.x.|x.xx  x.xx|xxx.|x.xx|x.x.  kick 4/4-6 hihat 9/12+0 snare 2/2+0  8.5dB
+  41       §1   8 88788  x.x.|x.x.|x.x.|x.x.  x.x.|..x.|x.x.|x.x.  kick 4/4-6 hihat 6/12+1 snare 2/2+3  8.4dB
+  42       §1   9 98788  x.x.|x.x.|x.x.|x.x.  x.xx|x.x.|x.xx|..x.  kick 4/4-5 hihat 8/12+0 snare 2/2+3  7.0dB
+  43       §1   8 88788  xxx.|x.x.|x.x.|x.x.  x.x.|..x.|x.xx|xxx.  kick 4/4-6 hihat 8/12+1 snare 2/2+3  7.1dB
+  44       §1   8 88788  x.x.|x.x.|x.x.|x.x.  x.xx|xxx.|x.xx|xxx.  kick 4/4-3 hihat 10/12+0 snare 2/2+0  7.8dB
+  45       §1   7 78888  x.x.|x.x.|x.x.|x...  x.xx|xxx.|x.xx|x.x.  kick 4/4-3 hihat 9/12+0 snare 2/2+3  19.9dB
+  46       §1   5 01899  ....|....|....|....  x.x.|xxx.|x.x.|x.x.  kick 0/4 hihat 7/12+0 snare 2/2+3
+  47       §1   8 89888  x.x.|x.x.|x.x.|x.x.  x.x.|..x.|x.x.|....  kick 4/4-5 hihat 5/12+1 snare 2/2+1  6.9dB
+  48-51×4  §1   8 89788  x.x.|x.x.|x.x.|x.x.  x.xx|xxx.|x.xx|xxx.  kick 4/4-3 hihat 10/12+0 snare 2/2+3  9.4dB
+  52       §1   8 89788  x.x.|x.x.|x.x.|x.xx  x.xx|xxx.|x.xx|xxx.  kick 4/4-5 hihat 10/12+1 snare 2/2+3  9.6dB
+  53       §1   8 78788  x.x.|x.x.|x.x.|x.x.  x.x.|x.x.|x.x.|x.x.  kick 4/4-3 hihat 6/12+1 snare 2/2+3  9.6dB
+  54       §1   8 79788  x.x.|x.x.|x.x.|x.x.  x.xx|xxx.|x.x.|..x.  kick 4/4-3 hihat 8/12+1 snare 2/2+1  9.3dB
+  55       §1   8 89788  xxx.|x.x.|x.x.|x.x.  x.x.|..x.|x.x.|x.x.  kick 4/4-3 hihat 6/12+1 snare 2/2+3  8.6dB
+  56       §1   8 89788  ..x.|x.x.|x.x.|x.x.  x.xx|xxx.|x.xx|xxx.  kick 3/4-4 hihat 10/12+1 snare 2/2+1  8.5dB
+  57       §1   8 89788  x.x.|x.x.|x.x.|x.x.  x.xx|xxx.|x.xx|xxx.  kick 4/4-4 hihat 10/12-1 snare 2/2+4  10.9dB
+  58       §1   8 89788  x.x.|x.x.|x.x.|x.x.  x.xx|xxx.|...x|x.x.  kick 4/4-4 hihat 7/12+1 snare 2/2+4  10.2dB
+  59       §1   8 89788  x.x.|x.x.|x.x.|x.x.  x.x.|x.x.|x.xx|xxx.  kick 4/4-4 hihat 8/12+0 snare 2/2+4  9.4dB
+  60       §1   8 89788  x...|x.x.|x.x.|x.x.  x.xx|xxx.|x.xx|xxx.  kick 4/4-6 hihat 10/12+0 snare 2/2+4  9.9dB
+  61       §1   7 59888  x.x.|x.x.|x.x.|x.x.  x.xx|xxx.|x.xx|xxx.  kick 4/4-4 hihat 10/12+0 snare 2/2+1  18.0dB
+  62       §1   6 07988  x...|x...|x...|....  x.xx|xxx.|x.xx|xxx.  kick 3/4-4 hihat 10/12+0 snare 2/2+4  23.3dB
+  63       §1   5 00999  ....|....|....|....  x.x.|xxx.|x.x.|x.x.  kick 0/4 hihat 7/12+1 snare 2/2+4
+  64       §1   7 78999  ....|....|x.x.|x...  x.xx|xxx.|x.xx|xxx.  kick 2/4-7 hihat 10/12+1 snare 2/2+4  6.2dB

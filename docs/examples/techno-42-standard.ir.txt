@@ -1,0 +1,93 @@
+# beats-ir/1 genre=techno seed=42 structure=standard | 128 BPM C3 Major | 56 bars 1:45 | 16 steps/bar
+# grid: 1 char = 1/16, | = beat; X accent x hit g ghost - sustain . rest; letters = that row's distinct 1-bar patterns; ×N = repeats
+# (pNN) = percentile vs techno corpus of 30 seeds
+
+PARTS
+  kick       kick     drums-v8     ch10  active 56/56 bars (p83)
+  snare      snare    drums        ch11  active 48/56 bars (p83)
+  hihat      hat      drums-v8     ch12  active 56/56 bars (p50)
+  bass       bass     reese        ch6   active 49/56 bars range C3-B3 (p17)
+  melody     melody   sync-lead    ch4   active 38/56 bars range C4-B4 (p17)
+  harmony    harmony  dark-pad     ch7   active 52/56 bars range C3-B3 (p17)
+  never sounds: hit1 hit2 hit3 hit4
+
+PATTERNS
+  kick       A  X...|X...|X...|X...   4
+  snare      A  ....|x...|....|x...   2
+  hihat      A  x.xg|.gx.|x.xg|.gx.  10
+  hihat      B  xgxg|x.xg|xgxg|x.xg  14
+  hihat      C  xgxg|.gx.|x.xg|.gx.  11
+  hihat      D  x.xg|x.xg|xgxg|x.xg  13
+  hihat      E  x.xg|..xg|xgxg|x.xg  12
+  hihat      F  xgxg|x.x.|x.xg|.gx.  11
+  hihat      G  x.xg|.gxg|xgxg|x.xg  13
+  hihat      H  xgxg|x.xg|x.xg|.gx.  12
+  bass       A  ....|x-..|x-..|x-..   3 C3 C3 C3
+  bass       B  x-..|x-..|x-..|x-..   4 B3 B3 B3 B3
+  bass       C  x-..|x-..|x-..|x-..   4 C3 C3 C3 C3
+  melody     A  ...x|x...|x..x|x...   5 C4 C4 C4 C4 C4
+  melody     B  x...|x.xx|x..x|xx..   8 D4 D4 C4 C4 D4 C4 D4 D4
+  melody     C  x..x|x...|x..x|x...   6 C4 C4 C4 C4 C4 C4
+  melody     D  x...|x...|x.xx|x..x   7 C4 C4 C4 E4 C4 C4 C4
+  melody     E  xx.x|x...|x.x.|xx..   8 D4 C4 E4 F4 F4 A4 B4 C4
+  harmony    A  .xx-|----|----|----   2 E3 G3
+  harmony    B  xxx-|----|----|----   3 B3 D3 F3
+  harmony    C  xxx-|----|----|----   3 C3 E3 G3
+
+SECTIONS
+§1 intro  bars 1-4 (4)  14.0 hits/bar
+  in: kick hihat
+  kick       A×4                    4/bar(p83)     on 100% off 0% 16th 0%
+  hihat      A×4                    10/bar(p0)     on 20% off 40% 16th 40%
+  ctl        feel×1
+§2 buildup  bars 5-16 (12)  28.2 hits/bar
+  in: snare bass melody harmony
+  kick       A×12                   4/bar(p83)     on 100% off 0% 16th 0%
+  snare      A×12                   2/bar(p50)     on 100% off 0% 16th 0%
+  hihat      A×6 B×6                12/bar(p100)   on 25% off 33% 16th 41%
+  bass       A (B C)×5 B            3.92/bar(p0)   on 100% off 0% 16th 0%  notes C3 B3
+  melody     A (B . . C)×2 B .×2    6.83/bar(p60)  on 56% off 7% 16th 36%  notes C4 D4
+  harmony    A (B C)×5 B            2.92/bar(p0)   on 31% off 34% 16th 34%  notes C3 D3 E3 F3 G3 B3
+  ctl        feel×1 slot×6 unmute-track×2  unmute snare@b5 unmute harmony@b5
+§3 drop  bars 17-28 (12)  32.2 hits/bar
+  kick       A×12                   4/bar(p83)     on 100% off 0% 16th 0%
+  snare      A×12                   2/bar(p50)     on 100% off 0% 16th 0%
+  hihat      C A×5 D B×5            12/bar(p100)   on 25% off 33% 16th 41%
+  bass       (C B)×6                4/bar(p100)    on 100% off 0% 16th 0%  notes C3 B3
+  melody     (C B D E)×3            7.25/bar(p90)  on 55% off 10% 16th 34%  notes C4 D4 E4 F4 A4 B4
+  harmony    (C B)×6                3/bar(p100)    on 33% off 33% 16th 33%  notes C3 D3 E3 F3 G3 B3
+  ctl        feel×1 slot×12
+§4 verse  bars 29-40 (12)  27.4 hits/bar
+  kick       A×12                   4/bar(p83)     on 100% off 0% 16th 0%
+  snare      A×12                   2/bar(p50)     on 100% off 0% 16th 0%
+  hihat      C A×8 E B×2            10.92/bar(p0)  on 22% off 36% 16th 41%
+  bass       (C B)×6                4/bar(p100)    on 100% off 0% 16th 0%  notes C3 B3
+  melody     (C B . .)×3            7/bar(p80)     on 57% off 7% 16th 35%  notes C4 D4
+  harmony    (C B)×6                3/bar(p100)    on 33% off 33% 16th 33%  notes C3 D3 E3 F3 G3 B3
+  ctl        feel×1 slot×12
+§5 drop  bars 41-52 (12)  32.2 hits/bar
+  kick       A×12                   4/bar(p83)     on 100% off 0% 16th 0%
+  snare      A×12                   2/bar(p50)     on 100% off 0% 16th 0%
+  hihat      F A×5 G B×5            12/bar(p100)   on 25% off 33% 16th 41%
+  bass       (C B)×6                4/bar(p100)    on 100% off 0% 16th 0%  notes C3 B3
+  melody     (C B D E)×3            7.25/bar(p90)  on 55% off 10% 16th 34%  notes C4 D4 E4 F4 A4 B4
+  harmony    (C B)×6                3/bar(p100)    on 33% off 33% 16th 33%  notes C3 D3 E3 F3 G3 B3
+  ctl        slot×12
+§6 outro  bars 53-56 (4)  22.0 hits/bar
+  out: snare
+  kick       A×4                    4/bar(p83)     on 100% off 0% 16th 0%
+  hihat      H A×3                  10.5/bar(p0)   on 21% off 38% 16th 40%
+  bass       C .×3                  4/bar(p100)    on 100% off 0% 16th 0%  notes C3
+  melody     C B .×2                7/bar(p80)     on 57% off 7% 16th 35%  notes C4 D4
+  harmony    (C B)×2                3/bar(p100)    on 33% off 33% 16th 33%  notes C3 D3 E3 F3 G3 B3
+  ctl        feel×1 mute-track×2 slot×4  mute snare@b53 mute bass-13@b53
+
+TOTALS
+  kick       4/bar(p83)  16th 0%(p50)  off 0%  1 patterns(p17)
+  snare      2/bar(p50)  16th 0%(p50)  off 0%  1 patterns(p50)
+  hihat      11.52/bar(p83)  16th 41%(p83)  off 34%  8 patterns(p17)
+  bass       3.98/bar(p70)  16th 0%(p50)  off 0%  3 patterns(p17)  2 pitches span 11st(p17)
+  melody     7.13/bar(p88)  16th 35%(p97)  off 9%  5 patterns(p17)  6 pitches span 11st(p75)
+  harmony    2.98/bar(p50)  16th 33%(p50)  off 33%  3 patterns(p50)  6 pitches span 11st(p50)
+  kick/bass  195/195 bass onsets land on a kick (100%)(p83)
+  length     56 bars(p17)
